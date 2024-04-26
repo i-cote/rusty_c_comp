@@ -56,5 +56,6 @@ fn gen_for_grammar(
     // eprintln!("xx{}",String::from_utf8(x).unwrap());
 
     println!("cargo:rerun-if-changed=src/{}", file_name);
+    println!("cargo:rerun-if-changed=src/generated");
     Ok(())
 }
